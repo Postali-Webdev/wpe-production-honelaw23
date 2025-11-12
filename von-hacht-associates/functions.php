@@ -587,7 +587,7 @@ function sdt_remove_ver_css_js($src, $handle)
 }
 
 
-define('CHILD_THEME_VERSION', filemtime(get_stylesheet_directory() . '/style.css'));
+define(CHILD_THEME_VERSION, filemtime(get_stylesheet_directory() . '/style.css'));
 
 add_filter('stylesheet_uri', 'child_stylesheet_uri');
 /**

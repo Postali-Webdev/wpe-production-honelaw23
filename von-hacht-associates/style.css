@@ -1311,8 +1311,8 @@ img.alignright,
 }
 
 .header-image .site-title > a {
-    background-position: left !important;
-    background-size: contain !important;
+    background-position: center !important;
+    background-size: 100% !important;
     float: left;
     min-height: 76px;
     width: 100%;
@@ -3363,7 +3363,7 @@ aside h3, aside .charleft, footer .charleft {
 }
 
 .site-title a {
-    background: url("https://hone.law/wp-content/themes/von-hacht-associates/images/logo.png") no-repeat !important;
+    background: url("/wp-content/uploads/2025/11/hone-law-logo.png") no-repeat !important;
 }
 
 .banner-top .banner__subtitle {
