@@ -302,6 +302,66 @@
         }
     });
 
+
+
+
+    $(document).on('ready', function () {
+        
+        if ($('.post-type-archive-results, .tax-result_category').length) {
+
+             var $windowWidth = $(window).outerWidth();
+
+            
+            
+            $(window).on('scroll', function () {
+                
+                $('.single-result').each(function (index, item) {
+                    var $resultPosTop = $(this).position().top;    
+                    var $userPosTop = $(document).scrollTop();
+                    var $resultHeight = $(this).outerHeight();
+                    var $headerHeight = $('.site-header').outerHeight();
+                    var $resultBottomPosition = ($resultPosTop + $resultHeight + $headerHeight) - $userPosTop;
+
+                    var $resultTopTriggerPos = 200;
+                    var $resultBottomTriggerPos = -200;
+
+                    
+
+                    if ($windowWidth < 1024) {
+                        $resultTopTriggerPos = -400;
+                        $resultBottomTriggerPos = -900;
+                        if (index == 0) {
+                            console.log($resultBottomPosition)    
+                        }
+                    }
+
+                    if ($windowWidth < 600) {
+                        $resultTopTriggerPos = 500;
+                        $resultBottomTriggerPos = -500;
+                    }
+
+                    if ($resultBottomPosition < $resultTopTriggerPos && $resultBottomPosition > $resultBottomTriggerPos) {
+                        $(this).addClass('focus-element');
+                    }
+
+                    if ($resultBottomPosition > $resultTopTriggerPos && $(this).hasClass('focus-element')) {
+                        $(this).removeClass('focus-element');
+                    }
+                    
+                    if ($resultBottomPosition < $resultBottomTriggerPos && $(this).hasClass('focus-element')) {
+                        $(this).removeClass('focus-element');
+                    }
+
+                })
+            })
+        }
+
+    });
+
+
+
+
+
 }(jQuery));
 
 (function(d){

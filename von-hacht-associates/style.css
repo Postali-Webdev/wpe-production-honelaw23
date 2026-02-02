@@ -4779,3 +4779,221 @@ body .site-footer {
 .slick-prev.slick-arrow:before {
     transform: rotate(90deg);
 }
+
+.single-results .site-inner .site-inner,
+.post-type-archive-results .site-inner .site-inner,
+.tax-result_category .site-inner .site-inner {
+    position: relative;
+}
+
+.single-results,
+.post-type-archive-results,
+.tax-result_category {
+    overflow: hidden;
+}
+
+.single-results .results,
+.post-type-archive-results .results,
+.tax-result_category .results {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.single-results .results .single-result,
+.post-type-archive-results .results .single-result,
+.tax-result_category .results .single-result {
+    background: #eee;
+    padding: 32px;
+    transition: 300ms ease;
+}
+
+.single-results .results .single-result.focus-element,
+.post-type-archive-results .results .single-result.focus-element,
+.tax-result_category .results .single-result.focus-element {
+    box-shadow: 3px 4px 25px #1f293a54;
+    transform: scale(1.005);
+}
+
+.single-results .results .single-result p.cateogry,
+.post-type-archive-results .results .single-result p.cateogry,
+.tax-result_category .results .single-result p.cateogry {
+    color: #26445F;
+    background: #65DDE1;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 100%;
+    text-transform: capitalize;
+    padding: 3px;
+    font-family: "League Spartan";
+    margin-bottom: 24px;
+}
+
+.single-results .results .single-result h3,
+.post-type-archive-results .results .single-result h3,
+.tax-result_category .results .single-result h3 {
+    margin-bottom: 24px;
+}
+
+.single-results .results .single-result p:not(.cateogry),
+.post-type-archive-results .results .single-result p:not(.cateogry),
+.tax-result_category .results .single-result p:not(.cateogry) {
+    font-size: 20px;
+}
+
+.single-results .navigation.pagination,
+.post-type-archive-results .navigation.pagination,
+.tax-result_category .navigation.pagination {
+    margin-bottom: 112px;
+}
+
+.single-results .site-inner .site-inner .grid-container .row1,
+.post-type-archive-results .site-inner .site-inner .grid-container .row1,
+.tax-result_category .site-inner .site-inner .grid-container .row1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 39px;
+    margin-bottom: 83px;
+    margin-top: 20px;
+    position: relative;
+    left: -15px;
+}
+
+@media screen and (max-width: 668px) {
+    .single-results .site-inner .site-inner .grid-container .row1,
+    .post-type-archive-results .site-inner .site-inner .grid-container .row1,
+    .tax-result_category .site-inner .site-inner .grid-container .row1 { 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.single-results .site-inner .site-inner .grid-container .row2,
+.post-type-archive-results .site-inner .site-inner .grid-container .row2,
+.tax-result_category .site-inner .site-inner .grid-container .row2 {
+    margin-bottom: 112px;
+}
+
+.single-results .site-inner .site-inner .grid-container .row1 p,
+.post-type-archive-results .site-inner .site-inner .grid-container .row1 p,
+.tax-result_category .site-inner .site-inner .grid-container .row1 p {
+    width: 105px;
+    min-width: 105px;
+    flex-shrink: 0;
+    margin: 0;
+    color: #71777D;
+    font-family: "League Spartan";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.single-results .site-inner .site-inner .grid-container .row1 ul,
+.post-type-archive-results .site-inner .site-inner .grid-container .row1 ul,
+.tax-result_category .site-inner .site-inner .grid-container .row1 ul {
+    width: calc(100% - 144px);
+    margin: 0;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 39px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 668px) {
+    .single-results .site-inner .site-inner .grid-container .row1 ul,
+    .post-type-archive-results .site-inner .site-inner .grid-container .row1 ul,
+    .tax-result_category .site-inner .site-inner .grid-container .row1 ul {
+        width: 100%;
+    }
+}
+
+.single-results .site-inner .site-inner .grid-container .row1 ul li,
+.post-type-archive-results .site-inner .site-inner .grid-container .row1 ul li,
+.tax-result_category .site-inner .site-inner .grid-container .row1 ul li {
+    height: fit-content;
+    width: fit-content;
+    padding: 0 !important;
+}
+
+.single-results .floaty-shapes, 
+.post-type-archive-results .floaty-shapes, 
+.tax-result_category .floaty-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.single-results .floaty1,
+.post-type-archive-results .floaty1,
+.tax-result_category .floaty1 {
+    top: calc(20% - 163px);
+    left: -20%;
+}
+
+.single-results .floaty2,
+.post-type-archive-results .floaty2,
+.tax-result_category .floaty2 {
+    top: calc(60% - 184px );
+    left: -16%;
+}
+
+.single-results .floaty3,
+.post-type-archive-results .floaty3,
+.tax-result_category .floaty3 {
+    top: calc(35% - 276px);
+    left: unset;
+    right: -30%;
+}
+
+.single-results .floaty4,
+.post-type-archive-results .floaty4,
+.tax-result_category .floaty4 {
+    top: calc(70% - 404px);
+    left: -10%;
+}
+
+.single-results .floaty5,
+.post-type-archive-results .floaty5,
+.tax-result_category .floaty5 {
+    top: calc(40% - 116px);
+    left: unset;
+    right: -5%;
+    z-index: 1;
+}
+
+.single-results .floaty6,
+.post-type-archive-results .floaty6,
+.tax-result_category .floaty6 {
+    top: calc(92% - 131px);
+    left: unset;
+    right: -5%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .single-results .floaty5,
+    .post-type-archive-results .floaty5,
+    .tax-result_category .floaty5,
+    .single-results .floaty6,
+    .post-type-archive-results .floaty6,
+    .tax-result_category .floaty6 {
+        z-index: -1;
+    }
+}
+
+.single-results .row2 {
+    margin-top: 60px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .single-results .floaty1 {
+        top: calc(40% - 163px);
+    }
+}

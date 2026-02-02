@@ -1,0 +1,17 @@
+<svg width="163" height="163" viewBox="0 0 163 163" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="81.5" cy="81.5" r="81.5" fill="url(#pattern0_2_1335)"/>
+<defs>
+<pattern id="pattern0_2_1335" patternUnits="userSpaceOnUse" patternTransform="matrix(15 0 0 15 64.7322 64.7322)" preserveAspectRatio="none" viewBox="-3.53564 -3.53552 30 30" width="1" height="1">
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(-60 -60)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(-30 -60)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(0 -60)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(-60 -30)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(-30 -30)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(0 -30)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(-60 0)"/>
+<use xlink:href="#pattern0_2_1335_inner" transform="translate(-30 0)"/>
+<g id="pattern0_2_1335_inner">
+<path d="M60 0L0 60" stroke="#71777D" stroke-width="10"/>
+</g>
+</pattern></defs>
+</svg>
